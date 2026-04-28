@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SH Cho — Business Development Executive | 조성효</title>
+<meta name="description" content="SH Cho (Sung Hyo Cho, 조성효). 32 years of progressive B2B/B2G leadership in Power, Energy, Defense, and Petrochemical sectors. Gas turbines, industrial compressors, and clean energy business development.">
+<meta name="author" content="SH Cho">
+<link rel="canonical" href="https://sunghyocho.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="SH Cho — Business Development Executive">
+<meta property="og:description" content="32 years of B2B/B2G leadership in Power, Energy, Defense, and Petrochemical sectors.">
+<meta property="og:url" content="https://sunghyocho.com/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="ko" href="https://sunghyocho.com/">
+<link rel="alternate" hreflang="en" href="https://sunghyocho.com/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://sunghyocho.com/">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+<!-- JSON-LD: Person -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "SH Cho",
+  "givenName": "Sung Hyo",
+  "familyName": "Cho",
+  "alternateName": ["Sung Hyo Cho", "조성효"],
+  "jobTitle": "Non-Executive Advisor (Hanwha Power)",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Hanwha Power"
+  },
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "State University of New York at Stony Brook (EMBA)"},
+    {"@type": "CollegeOrUniversity", "name": "Pusan National University"}
+  ],
+  "knowsLanguage": ["ko", "en"],
+  "knowsAbout": [
+    "Gas Turbines",
+    "Industrial Compressors",
+    "Hydrogen and Ammonia Power",
+    "Supercritical CO2 Power Generation",
+    "Defense MRO",
+    "Global B2B/B2G Sales",
+    "OEM Partnership Negotiation"
+  ],
+  "email": "mailto:sunghyocho0@gmail.com",
+  "url": "https://sunghyocho.com/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Seoul",
+    "addressCountry": "KR"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #18181b;
+    --fg-muted: #52525b;
+    --fg-subtle: #71717a;
+    --line: #e4e4e7;
+    --line-soft: #f4f4f5;
+    --accent: #18181b;
+    --max-w: 880px;
+    --gutter: clamp(20px, 5vw, 56px);
+    --font-kr: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    --font-en: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+  body {
+    font-family: var(--font-kr);
+    font-feature-settings: "ss06";
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.65;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body[data-lang="en"] {
+    font-family: var(--font-en);
+    letter-spacing: -0.011em;
+  }
+
+  /* Layout */
+  main {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 80px var(--gutter) 120px;
+  }
+
+  /* Top bar */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .topbar-inner {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 14px var(--gutter);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 22px;
+  }
+  .nav-links a {
+    font-size: 13px;
+    color: var(--fg-muted);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: color .15s ease;
+  }
+  .nav-links a:hover { color: var(--fg); }
+  .nav-links a.active { color: var(--fg); }
+  .lang-toggle {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .lang-toggle button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    padding: 6px 14px;
+    color: var(--fg-muted);
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease;
+  }
+  .lang-toggle button[aria-pressed="true"] {
+    background: var(--fg);
+    color: #fff;
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fg-subtle);
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 20px;
+  }
+  .hero-tagline {
+    font-size: clamp(17px, 2vw, 20px);
+    color: var(--fg-muted);
+    max-width: 640px;
+    line-height: 1.55;
+  }
+
+  /* Section */
+  section { padding: 64px 0; border-bottom: 1px solid var(--line-soft); }
+  section:last-of-type { border-bottom: 0; }
+  .section-label {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--fg-subtle);
+    margin-bottom: 28px;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: clamp(22px, 2.6vw, 28px);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin-bottom: 28px;
+    line-height: 1.25;
+  }
+  h3 {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 6px;
+  }
+  p { margin-bottom: 14px; color: var(--fg); }
+  p:last-child { margin-bottom: 0; }
+
+  /* Summary block */
+  .summary p { font-size: 17px; line-height: 1.7; color: var(--fg); }
+  .summary p + p { margin-top: 14px; }
+
+  /* Highlight cards */
+  .highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+    margin-top: 8px;
+  }
+  .hl {
+    padding: 22px 22px 20px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .hl:hover { border-color: var(--fg); }
+  .hl .num {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+    line-height: 1.1;
+  }
+  .hl .lbl {
+    font-size: 13px;
+    color: var(--fg-muted);
+    line-height: 1.5;
+  }
+
+  /* Career timeline */
+  .role { padding: 28px 0; border-top: 1px solid var(--line-soft); }
+  .role:first-of-type { border-top: 0; padding-top: 8px; }
+  .role-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-size: 13px;
+    color: var(--fg-subtle);
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+  }
+  .role-meta .period { font-variant-numeric: tabular-nums; font-weight: 500; color: var(--fg-muted); }
+  .role-meta .org { color: var(--fg-muted); }
+  .role-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+  .role ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .role ul li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    color: var(--fg-muted);
+    font-size: 15px;
+    line-height: 1.65;
+  }
+  .role ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 6px;
+    height: 1px;
+    background: var(--fg-subtle);
+  }
+  .role ul ul {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .role ul ul li {
+    font-size: 14px;
+    color: var(--fg-subtle);
+  }
+  .role ul ul li::before { background: var(--line); }
+
+  /* Skills grid */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 28px 32px;
+  }
+  .skill-block h3 {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .skill-block p {
+    font-size: 14px;
+    color: var(--fg-muted);
+    line-height: 1.6;
+  }
+
+  /* Two col list (education / langs) */
+  .meta-list { display: grid; gap: 18px; }
+  .meta-row {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 24px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line-soft);
+    font-size: 15px;
+  }
+  .meta-row:first-child { border-top: 0; }
+  .meta-row .key {
+    color: var(--fg-subtle);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+  }
+  .meta-row .val { color: var(--fg); }
+  .meta-row .val small { color: var(--fg-subtle); display: block; margin-top: 2px; font-size: 13px; }
+
+  @media (max-width: 600px) {
+    .meta-row { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  /* Contact */
+  .contact-card {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 32px;
+    margin-top: 8px;
+  }
+  .contact-card a {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--fg);
+    padding-bottom: 1px;
+    transition: opacity .15s ease;
+  }
+  .contact-card a:hover { opacity: 0.6; }
+  .contact-row { display: flex; gap: 12px; align-items: baseline; margin-bottom: 10px; font-size: 15px; }
+  .contact-row .k {
+    width: 80px;
+    color: var(--fg-subtle);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+
+  /* Footer */
+  footer {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 40px var(--gutter);
+    color: var(--fg-subtle);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    border-top: 1px solid var(--line-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  /* Bilingual switching */
+  [data-i18n-en], [data-i18n-ko] { display: none; }
+  body[data-lang="ko"] [data-i18n-ko] { display: block; }
+  body[data-lang="ko"] li[data-i18n-ko] { display: list-item; }
+  body[data-lang="ko"] span[data-i18n-ko],
+  body[data-lang="ko"] a[data-i18n-ko] { display: inline; }
+  body[data-lang="en"] [data-i18n-en] { display: block; }
+  body[data-lang="en"] li[data-i18n-en] { display: list-item; }
+  body[data-lang="en"] span[data-i18n-en],
+  body[data-lang="en"] a[data-i18n-en] { display: inline; }
+
+  /* Print */
+  @media print {
+    .topbar, .lang-toggle, footer { display: none; }
+    main { padding: 0 24px; max-width: none; }
+    section { padding: 24px 0; border-bottom: 1px solid #ccc; page-break-inside: avoid; }
+    .role { page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+    body { font-size: 11pt; }
+    h1 { font-size: 28pt; }
+  }
+</style>
+</head>
+<body data-lang="ko">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand">SH CHO</a>
+    <div class="topbar-right">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/notes.html" data-i18n-ko>노트</a>
+        <a href="/notes.html" data-i18n-en>Notes</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-set-lang="ko" aria-pressed="true">KO</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="eyebrow" data-i18n-ko>Business Development Executive</div>
+    <div class="eyebrow" data-i18n-en>Business Development Executive</div>
+
+    <h1 data-i18n-ko>조성효</h1>
+    <h1 data-i18n-en>SH Cho</h1>
+
+    <p class="hero-tagline" data-i18n-ko>
+      가스터빈·산업용 압축기·친환경 발전 분야에서 32년간<br>
+      글로벌 B2B/B2G 사업과 대형 계약을 주도해 온 사업개발 임원.
+    </p>
+    <p class="hero-tagline" data-i18n-en>
+      Thirty-two years driving global B2B/B2G business development<br>
+      across gas turbines, industrial compressors, and clean energy.
+    </p>
+  </section>
+
+  <!-- SUMMARY -->
+  <section>
+    <div class="section-label" data-i18n-ko>Executive Summary</div>
+    <div class="section-label" data-i18n-en>Executive Summary</div>
+
+    <div class="summary">
+      <div data-i18n-ko>
+        <p>영업, 사업개발, 상품기획(NPI), 마케팅 분야에서 32년간 글로벌 B2B/B2G 사업과 성과를 창출해 온 리더. 가스터빈과 산업용 압축기, 군수 분야에서 국내외 대형 계약을 직접 협상하고 체결하였으며, 친환경 발전사업(수소·암모니아·sCO₂) 분야의 사업개발에서도 World-First 프로젝트를 주도한 경험을 보유함.</p>
+        <p>한화파워시스템 친환경발전사업부 사업부장(상무) 재직 시 천억 미만 매출의 사업부를 4,000억 규모, 영업이익 7% 수준의 견실한 사업으로 성장시켰으며, Baker Hughes·GE·Rolls-Royce·Siemens Energy·UTC 등 글로벌 OEM과의 대형 협력 협상을 주도해 온 경험을 갖춤.</p>
+      </div>
+      <div data-i18n-en>
+        <p>A Business Development Leader and Executive with over 32 years of progressive experience in B2B/B2G sales across Power, Energy, Defense, and Petrochemical sectors. Proven track record in driving market creation, forging strategic global alliances, and closing large-scale deals — ranging from government defense procurement programs (ROKAF, ROKN, ROKA) to global commercial contracts with OEMs and conglomerates.</p>
+        <p>Possesses deep technical and commercial expertise in the green energy transition, including ammonia gas turbine co-development, hydrogen/LNG compressor solutions, and supercritical CO₂ power generation. Adept at navigating complex regulatory landscapes and aligning business strategies with national decarbonization policies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section>
+    <div class="section-label" data-i18n-ko>경력</div>
+    <div class="section-label" data-i18n-en>Experience</div>
+
+    <h2 data-i18n-ko>한화파워 / 한화파워시스템 / 한화에어로스페이스 (1993 – 현재)</h2>
+    <h2 data-i18n-en>Hanwha Power / Hanwha Power Systems / Hanwha Aerospace (1993 – Present)</h2>
+
+    <!-- 2025 - Present -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2025년 1월 – 현재</span>
+        <span class="period" data-i18n-en>Jan 2025 – Present</span>
+        <span class="org" data-i18n-ko>한화파워 (구. 한화파워시스템)</span>
+        <span class="org" data-i18n-en>Hanwha Power (formerly Hanwha Power Systems)</span>
+      </div>
+      <div class="role-title" data-i18n-ko>비상근 고문</div>
+      <div class="role-title" data-i18n-en>Non-Executive Advisor</div>
+      <ul>
+        <li data-i18n-ko>에너지·발전 분야 사업 자문</li>
+        <li data-i18n-ko>32년간 구축한 글로벌 고객·파트너 네트워크 유지·관리</li>
+        <li data-i18n-en>Strategic advisory for energy and power business development</li>
+        <li data-i18n-en>Maintaining and leveraging global customer and partner networks built over 32 years</li>
+      </ul>
+    </article>
+
+    <!-- 2023 - 2024 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2023년 11월 – 2024년 12월</span>
+        <span class="period" data-i18n-en>Nov 2023 – Dec 2024</span>
+        <span class="org">Hanwha Power Systems</span>
+      </div>
+      <div class="role-title" data-i18n-ko>상무 / 친환경발전사업부 사업부장</div>
+      <div class="role-title" data-i18n-en>Vice President &amp; Division General Manager — Clean Power Business Division</div>
+      <ul>
+        <li data-i18n-ko>한화(한화파워시스템·한화오션)–Baker Hughes 간 소형 암모니아 가스터빈 공동개발(JDCA) 협상에서 한화 측 대표로 합의 도출 (LNG 운반선·컨테이너선용 해상 추진시스템 및 육상 분산발전 적용, 100% 암모니아·천연가스 혼소). 2024년 3월 MOC 체결</li>
+        <li data-i18n-ko>CHPS(Clean Hydrogen Portfolio Standards) 발전사업 — 한화임팩트 주관·한화파워시스템 지원 → 2024년 9월 KOREC 조건부 인가. GE 7E 복합발전(120MW) 기반, 100% 수소 전소 7E 가스터빈 FSNL 시험 성공 (NOx 4ppm)</li>
+        <li data-i18n-ko>초임계 CO₂(sCO₂) 발전사업 개발 — TC Energy 등 잠재 고객 2곳과 MOU 체결, BOO/BOOT 모델 추진. Solar Turbines와 송유관용 sCO₂ 협력 계약 체결</li>
+        <li data-i18n-ko>HPS Holdings 산하 GTS 그룹(미국 PSM·네덜란드 Thomassen)과 함께 국내 가스터빈 개조·서비스 사업 리딩. 2023년 한국서부발전(KOWEPO)과 친환경 발전 협력 MOU 체결</li>
+        <li data-i18n-en>Led Hanwha's negotiation as lead representative for the JDCA between Hanwha (HPS &amp; Hanwha Ocean) and Baker Hughes for joint development of small-sized ammonia gas turbines — designed for marine propulsion (LNG carriers, container ships) and land-based distributed power, 100% ammonia or natural gas/ammonia co-firing. MOC signed March 2024</li>
+        <li data-i18n-en>CHPS (Clean Hydrogen Portfolio Standards) power generation — submitted by Hanwha Impact, supported by HPS — granted conditional approval by KOREC (MOTIE) in September 2024. Based on GE 7E combined-cycle (120 MW); 100% hydrogen-fueled 7E FSNL tested at NOx 4 ppm</li>
+        <li data-i18n-en>Initiated supercritical CO₂ (sCO₂) power business — MOUs with TC Energy and one other prospect (2024); BOO/BOOT and equipment-sales models. Collaboration agreement with Solar Turbines for sCO₂ in pipeline compressor stations</li>
+        <li data-i18n-en>Led Korea gas turbine retrofit and service business as a member of the GTS Group alongside PSM (Jupiter, FL) and Thomassen (Netherlands) under HPS Holdings. MOU with KOWEPO in 2023 for eco-friendly power generation</li>
+      </ul>
+    </article>
+
+    <!-- 2021 - 2023 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2021년 11월 – 2023년 11월</span>
+        <span class="period" data-i18n-en>Nov 2021 – Nov 2023</span>
+        <span class="org">Hanwha Power Systems</span>
+      </div>
+      <div class="role-title" data-i18n-ko>부장 / 친환경발전사업부 사업부장</div>
+      <div class="role-title" data-i18n-en>Director &amp; Division General Manager — Clean Power Business Division</div>
+      <ul>
+        <li data-i18n-ko>Baker Hughes·Siemens Energy·Solar Turbines 등 주요 가스터빈 OEM과 암모니아 가스터빈 공동개발 협상 주도. 2023년 Siemens Energy와 가스터빈 및 해상 추진용 EPS(Electric Propulsion System) 협력 MOU 체결</li>
+        <li data-i18n-ko>코하이젠과 수소 압축기 공급 계약 — 국내 10개 수소충전소(당시 세계 최대 규모 HRS)용 중압 수소 압축기 30기. Hanwha–PDC 패키지 협력 구조 확립</li>
+        <li data-i18n-ko>Heliogen과 sCO₂ 발전 시스템(5MW) 공급 계약 체결 (2021년, CSP 적용)</li>
+        <li data-i18n-en>Led negotiations with major gas turbine OEMs — Baker Hughes, Siemens Energy, Solar Turbines — for ammonia gas turbine joint development. MOU with Siemens Energy in 2023 for gas turbine collaboration and EPS for marine application</li>
+        <li data-i18n-en>Contracted with KOHYGEN for supply of 30 mid-pressure hydrogen compressors for ten HRS in Korea — the world's largest HRS at the time. Established Hanwha–PDC package collaboration</li>
+        <li data-i18n-en>Awarded 1st sCO₂ Power Generation System Supply Contract with Heliogen for CSP application in 2021 (5 MW)</li>
+      </ul>
+    </article>
+
+    <!-- 2016 - 2021 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2016년 1월 – 2021년 11월</span>
+        <span class="period" data-i18n-en>Jan 2016 – Nov 2021</span>
+        <span class="org">Hanwha Power Systems</span>
+      </div>
+      <div class="role-title" data-i18n-ko>부장 / 파워 &amp; 가스 솔루션 팀장</div>
+      <div class="role-title" data-i18n-en>Director &amp; Team Leader — Power &amp; Gas Solutions Team</div>
+      <ul>
+        <li data-i18n-ko>Non-integrally geared 압축기(스크류·다이어프램·단축 원심) 중심 신규 사업개발·영업 총괄. Baker Hughes(구 GE Oil &amp; Gas)와 Turbo-machinery 패키징 협력 — Frame 5 가스터빈 2기를 한화토탈·YNCC에 납품, 10MW STG 2기·배럴 압축기 1기를 EPC를 통해 말레이시아 납품</li>
+        <li data-i18n-ko>PDC와 다이어프램 압축기 패키징 협력 계약 체결 — 한화토탈에 초도 패키지 납품, 코하이젠 프로젝트 독점 협력 확보</li>
+        <li data-i18n-ko>한국가스공사와 TEG(Turbo Expander Generator, 1.5MW) 공급 계약 — 감압소 1기 납품·성능 검증 완료(2024)</li>
+        <li data-i18n-en>Led new business development in non-integrally geared compressors. Executed turbomachinery packaging partnership with Baker Hughes — delivered two Frame 5 (MS5001E) gas turbines to Hanwha Total and YNCC; two 10 MW STGs and one barrel compressor to Malaysia via an EPC partner</li>
+        <li data-i18n-en>Established Business Collaboration Agreement with PDC for diaphragm compressor packaging in Korea; secured exclusive relationship with PDC for KOHYGEN hydrogen compressor projects</li>
+        <li data-i18n-en>Signed supply contract with KOGAS for one TEG (1.5 MW) for a letdown station; commissioned and performance-verified in 2024</li>
+      </ul>
+    </article>
+
+    <!-- 2012 - 2015 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2012년 7월 – 2015년 12월</span>
+        <span class="period" data-i18n-en>Jul 2012 – Dec 2015</span>
+        <span class="org" data-i18n-ko>한화파워시스템 (구. 한화에어로스페이스)</span>
+        <span class="org" data-i18n-en>Hanwha Power Systems (formerly Hanwha Aerospace)</span>
+      </div>
+      <div class="role-title" data-i18n-ko>부장 / 마케팅·상품기획(NPI) 팀장</div>
+      <div class="role-title" data-i18n-en>Director &amp; Team Leader — Marketing &amp; New Products Introduction</div>
+      <ul>
+        <li data-i18n-ko>회사 최초 NPI 팀 창설 및 마케팅 팀 통합 조직 리딩 (4P 전략 총괄). Praxair·Air Liquide 등 글로벌 고객사와 프레임 계약 협상·실행</li>
+        <li data-i18n-ko>SA3100(최대형 표준 공냉 압축기), ASU용 준주문형 MAC·BAC(ALE·Air Products·Linde 공급), LD/HD 압축기(LNG 운반선·FSRU 적용), H-Eco1(100HP급), 사우디 아람코용 준주문형 API 압축기 등 신제품 출시 주도</li>
+        <li data-i18n-en>Established the company's first NPI team; led the combined Marketing &amp; NPI organization covering all 4Ps. Negotiated and implemented frame agreements with Praxair, Air Liquide</li>
+        <li data-i18n-en>Successful launches: SA3100 — largest standardized air-cooled IGC; customized ASU compressors (MAC, BAC) for ALE, Air Products, Linde; LD/HD compressors for LNG carriers and FSRUs; H-Eco1 (100 HP); semi-engineered API compressors for Saudi Aramco</li>
+      </ul>
+    </article>
+
+    <!-- 2009 - 2012 (combined) -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2009년 2월 – 2012년 6월</span>
+        <span class="period" data-i18n-en>Feb 2009 – Jun 2012</span>
+        <span class="org" data-i18n-ko>한화파워시스템 (구. 한화에어로스페이스)</span>
+        <span class="org" data-i18n-en>Hanwha Power Systems (formerly Hanwha Aerospace)</span>
+      </div>
+      <div class="role-title" data-i18n-ko>부장 / 해외영업 팀장 → 유럽·미주·CIS 영업 팀장</div>
+      <div class="role-title" data-i18n-en>Director &amp; Team Leader — International Sales / Europe, Americas &amp; CIS</div>
+      <ul>
+        <li data-i18n-ko>국내 시장 제외 전 세계 압축기 사업 해외영업 총괄. 2009년 글로벌 금융위기 속에서 유럽·미주·CIS 시장 영업을 안정화</li>
+        <li data-i18n-ko>2011년 차장 → 부장 특별 승진</li>
+        <li data-i18n-en>Oversaw the entire international sales organization for the compressor business. Stabilized Europe, Americas, and CIS sales during the 2009 Great Recession through direct customer engagement</li>
+        <li data-i18n-en>Awarded special promotion from Senior Manager to Director in 2011</li>
+      </ul>
+    </article>
+
+    <!-- 2006 - 2009 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2006년 – 2009년 1월</span>
+        <span class="period" data-i18n-en>2006 – Jan 2009</span>
+        <span class="org" data-i18n-ko>한화에어로스페이스 (구. 삼성테크윈)</span>
+        <span class="org" data-i18n-en>Hanwha Aerospace (formerly Samsung Techwin)</span>
+      </div>
+      <div class="role-title" data-i18n-ko>차장 / 방산 사업개발·영업</div>
+      <div class="role-title" data-i18n-en>Senior Manager — Defense Business Development &amp; Sales</div>
+      <ul>
+        <li data-i18n-ko>한국공군 F-15K 사업: UTC와 F100 엔진 면허생산 계약 체결 (약 1억 2,500만 달러)</li>
+        <li data-i18n-ko>한국해군 PKX 1차 생산: GE와 LM500 엔진 면허생산 계약 (약 6,000만 달러)</li>
+        <li data-i18n-ko>한국육군 한국형헬기(KHP) 사업: GE와 T700 엔진 공동개발 면허 계약</li>
+        <li data-i18n-ko>2008년 우수사원상 / 6시그마 블랙벨트 / 회계관리 2급(2007)</li>
+        <li data-i18n-en>Negotiated and concluded F100 engine license production contract with UTC — ROKAF F-15K Next Fighter Program ($125M)</li>
+        <li data-i18n-en>Concluded LM500 engine license production contract with GE — ROKN PKX 1st Production Program ($60M)</li>
+        <li data-i18n-en>Concluded co-development license contract with GE for T700 engines — ROKA Korean Helicopter Program (KHP)</li>
+        <li data-i18n-en>Exemplary Employee Award (2008) | Six Sigma Black Belt (2008) | Certified General Accounting, 2nd level (2007)</li>
+      </ul>
+    </article>
+
+    <!-- 2003 - 2005 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>2003년 – 2005년</span>
+        <span class="period" data-i18n-en>2003 – 2005</span>
+        <span class="org" data-i18n-ko>한화에어로스페이스 (구. 삼성테크윈)</span>
+        <span class="org" data-i18n-en>Hanwha Aerospace (formerly Samsung Techwin)</span>
+      </div>
+      <div class="role-title" data-i18n-ko>과장 / 방산 사업개발·영업</div>
+      <div class="role-title" data-i18n-en>Manager — Defense Business Development &amp; Sales</div>
+      <ul>
+        <li data-i18n-ko>한국해군 KDX-III: Rolls-Royce AG9140 Genset 면허생산 계약 (약 3,800만 달러)</li>
+        <li data-i18n-ko>한국해군 KDX-III: GE LM2500 엔진 면허생산 계약 (약 5,400만 달러)</li>
+        <li data-i18n-ko>한국해군 PKX 개발: GE LM500 엔진 면허생산 계약 (약 1,000만 달러)</li>
+        <li data-i18n-en>Concluded Rolls-Royce AG9140 Genset license production contract — ROKN KDX-III Program ($38M)</li>
+        <li data-i18n-en>Concluded GE LM2500 engine license production contract — ROKN KDX-III Program ($54M)</li>
+        <li data-i18n-en>Concluded GE LM500 engine license production contract — ROKN PKX Development Program ($10M)</li>
+      </ul>
+    </article>
+
+    <!-- 1996 - 2002 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>1996년 – 2002년</span>
+        <span class="period" data-i18n-en>1996 – 2002</span>
+        <span class="org" data-i18n-ko>한화에어로스페이스 (구. 삼성테크윈)</span>
+        <span class="org" data-i18n-en>Hanwha Aerospace (formerly Samsung Techwin)</span>
+      </div>
+      <div class="role-title" data-i18n-ko>대리–과장 / 방산 MRO 해외영업</div>
+      <div class="role-title" data-i18n-en>Assistant Manager – Manager — Defense MRO International Sales</div>
+      <ul>
+        <li data-i18n-ko>베네수엘라 공군 F100 엔진 업그레이드 서비스 계약 (약 6,000만 달러) — 당시 삼성테크윈 해외 MRO 최대 규모</li>
+        <li data-i18n-ko>미 해군 T56 엔진 부품 수리 계약 (약 2,700만 달러)</li>
+        <li data-i18n-ko>일본 Commercial 가스터빈 엔진(Model 250) MRO 시장 개척, 미 육군과 첫 계약 체결</li>
+        <li data-i18n-ko>1997년 파워시스템사업부 영업 우수상 / 1996년 특별 승진</li>
+        <li data-i18n-en>Negotiated and concluded F100 engine upgrade service contract with the Venezuelan Air Force ($60M) — the largest international MRO contract in Samsung Techwin's history at the time</li>
+        <li data-i18n-en>Concluded T56 engine component repair services contract with the United States Navy ($27M)</li>
+        <li data-i18n-en>Penetrated Japanese commercial gas turbine MRO market; concluded first contract with the United States Army for Model 250 engine overhaul</li>
+        <li data-i18n-en>Power Systems Division Sales Award (1997) | Special promotion (1996)</li>
+      </ul>
+    </article>
+
+    <!-- 1993 - 1995 -->
+    <article class="role">
+      <div class="role-meta">
+        <span class="period" data-i18n-ko>1993년 – 1995년</span>
+        <span class="period" data-i18n-en>1993 – 1995</span>
+        <span class="org" data-i18n-ko>한화에어로스페이스 (구. 삼성테크윈)</span>
+        <span class="org" data-i18n-en>Hanwha Aerospace (formerly Samsung Techwin)</span>
+      </div>
+      <div class="role-title" data-i18n-ko>사원 / 방산 MRO 해외영업</div>
+      <div class="role-title" data-i18n-en>Associate — Defense MRO International Sales</div>
+      <ul>
+        <li data-i18n-ko>네덜란드 해군 T56 엔진 MRO 계약 (약 200만 달러)</li>
+        <li data-i18n-ko>UTC와 PW400 RSP(Risk &amp; Revenue Sharing) 프로그램 관리</li>
+        <li data-i18n-en>Concluded T56 engine MRO contract with the Royal Netherlands Navy ($2M)</li>
+        <li data-i18n-en>Managed PW400 Risk &amp; Revenue Sharing (RSP) Program with UTC</li>
+      </ul>
+    </article>
+
+  </section>
+
+  <!-- EXPERTISE -->
+  <section>
+    <div class="section-label" data-i18n-ko>전문 영역</div>
+    <div class="section-label" data-i18n-en>Expertise</div>
+
+    <div class="skills">
+      <div class="skill-block">
+        <h3 data-i18n-ko>글로벌 B2B/B2G 영업·사업개발</h3>
+        <h3 data-i18n-en>Global B2B/B2G Sales &amp; BD</h3>
+        <p data-i18n-ko>유럽·미주·CIS·중동·아시아 직접 영업. 시장·경쟁 분석에서 포트폴리오·실행까지 일관된 책임. PSM·Thomassen 인수 후 PMI 주도 참여.</p>
+        <p data-i18n-en>Direct sales across Europe, Americas, CIS, Middle East, and Asia. From market analysis to portfolio strategy and execution. Drove post-acquisition integration of PSM and Thomassen.</p>
+      </div>
+      <div class="skill-block">
+        <h3 data-i18n-ko>해외 OEM 파트너십·대형 계약 협상</h3>
+        <h3 data-i18n-en>OEM Partnership &amp; Contract Negotiation</h3>
+        <p data-i18n-ko>Baker Hughes, GE, Rolls-Royce, Siemens Energy, UTC와 면허생산·공동개발·절충교역·MRO 계약 체결. 누적 수억 달러 규모.</p>
+        <p data-i18n-en>License production, JDCA, offset, and MRO contracts with Baker Hughes, GE, Rolls-Royce, Siemens Energy, and UTC. Cumulative value in the hundreds of millions.</p>
+      </div>
+      <div class="skill-block">
+        <h3 data-i18n-ko>친환경 발전사업 (수소·암모니아·sCO₂)</h3>
+        <h3 data-i18n-en>Clean Energy Business (H₂ · NH₃ · sCO₂)</h3>
+        <p data-i18n-ko>CHPS 규제 인가, 100% 수소 7E 가스터빈 시험, 암모니아 가스터빈 JDCA, sCO₂ 발전 계약·MOU 등 World-First 프로젝트 주도.</p>
+        <p data-i18n-en>CHPS regulatory approval, 100% H₂ 7E gas turbine testing, ammonia gas turbine JDCA, sCO₂ contracts and MOUs — multiple World-First initiatives.</p>
+      </div>
+      <div class="skill-block">
+        <h3 data-i18n-ko>NPI &amp; 글로벌 마케팅 전략</h3>
+        <h3 data-i18n-en>NPI &amp; Global Marketing Strategy</h3>
+        <p data-i18n-ko>회사 최초 NPI 조직 설립. 4P 전략, 지역별 가격, 채널, 신제품 출시 (SA3100, ASU MAC/BAC, LD/HD, H-Eco1).</p>
+        <p data-i18n-en>Founded the company's first NPI team. 4P strategy, regional pricing, channel design, product launches (SA3100, ASU MAC/BAC, LD/HD, H-Eco1).</p>
+      </div>
+      <div class="skill-block">
+        <h3 data-i18n-ko>방산 사업개발 (B2G)</h3>
+        <h3 data-i18n-en>Defense Business Development (B2G)</h3>
+        <p data-i18n-ko>한국 육·해·공군 가스터빈·헬기 엔진 면허생산·공동개발·절충교역 협상 주도. 미·네덜란드·베네수엘라 군 MRO 계약.</p>
+        <p data-i18n-en>License production, co-development, and offset programs for ROKAF, ROKN, ROKA. International MRO contracts with US, Netherlands, Venezuela.</p>
+      </div>
+      <div class="skill-block">
+        <h3 data-i18n-ko>P&amp;L 책임 사업부 운영</h3>
+        <h3 data-i18n-en>P&amp;L Ownership at Division Level</h3>
+        <p data-i18n-ko>친환경발전사업부장으로 천억 미만 사업부를 4,000억 규모·영업이익 7%로 성장. 지주사 대표 및 그룹 부회장 대면 보고 수행.</p>
+        <p data-i18n-en>Grew the Clean Power Business Division from sub-KRW 100B to 400B+ revenue at 7% OP margin. Reported directly to the Holding Co. CEO and the Group Vice Chairman.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section>
+    <div class="section-label" data-i18n-ko>학력·교육</div>
+    <div class="section-label" data-i18n-en>Education</div>
+
+    <div class="meta-list">
+      <div class="meta-row">
+        <div class="key">2008 – 2010</div>
+        <div class="val">
+          <span data-i18n-ko>미국 뉴욕주립대 스토니브룩 (SUNY Stony Brook) — EMBA</span>
+          <span data-i18n-en>State University of New York at Stony Brook — EMBA</span>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div class="key">2006</div>
+        <div class="val">
+          <span data-i18n-ko>삼성 AMP (Advanced Management Program) — Harvard Business School 연계, 10주 (용인)</span>
+          <span data-i18n-en>Samsung AMP — Advanced Management Program, HBS faculty-led, 10 weeks (Yongin, Korea)</span>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div class="key">1987 – 1993</div>
+        <div class="val">
+          <span data-i18n-ko>부산대학교 — 기계공학과 학사</span>
+          <span data-i18n-en>Pusan National University — B.S., Mechanical Engineering</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANGUAGES & CERTIFICATIONS -->
+  <section>
+    <div class="section-label" data-i18n-ko>언어·자격</div>
+    <div class="section-label" data-i18n-en>Languages &amp; Certifications</div>
+
+    <div class="meta-list">
+      <div class="meta-row">
+        <div class="key" data-i18n-ko>언어</div>
+        <div class="key" data-i18n-en>Languages</div>
+        <div class="val">
+          <span data-i18n-ko>영어 — 상급 (TOEIC 970)<small>한국어 — 모국어</small></span>
+          <span data-i18n-en>English — Advanced (TOEIC 970)<small>Korean — Native</small></span>
+        </div>
+      </div>
+      <div class="meta-row">
+        <div class="key" data-i18n-ko>자격</div>
+        <div class="key" data-i18n-en>Certifications</div>
+        <div class="val">
+          <span data-i18n-ko>6시그마 블랙벨트 (2008)<small>회계관리 2급 (2007)</small></span>
+          <span data-i18n-en>Six Sigma Black Belt (2008)<small>Certified General Accounting — 2nd Level (2007)</small></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label" data-i18n-ko>연락</div>
+    <div class="section-label" data-i18n-en>Contact</div>
+
+    <h2 data-i18n-ko>새로운 기회에 열려 있습니다.</h2>
+    <h2 data-i18n-en>Open to new opportunities.</h2>
+
+    <div class="contact-card">
+      <div class="contact-row">
+        <span class="k" data-i18n-ko>이메일</span>
+        <span class="k" data-i18n-en>Email</span>
+        <a href="mailto:sunghyocho0@gmail.com">sunghyocho0@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© <span id="year">2026</span> SH Cho.</span>
+  <span data-i18n-ko>최종 업데이트: 2026년 4월</span>
+  <span data-i18n-en>Last updated: April 2026</span>
+</footer>
+
+<script>
+  // Language toggle
+  (function() {
+    var body = document.body;
+    var btns = document.querySelectorAll('[data-set-lang]');
+    var html = document.documentElement;
+
+    function setLang(lang) {
+      body.dataset.lang = lang;
+      html.lang = lang;
+      btns.forEach(function(b) {
+        b.setAttribute('aria-pressed', b.dataset.setLang === lang ? 'true' : 'false');
+      });
+      try { localStorage.setItem('preferredLang', lang); } catch(e) {}
+      // Update URL without reload
+      var url = new URL(window.location.href);
+      if (lang === 'en') url.searchParams.set('lang', 'en');
+      else url.searchParams.delete('lang');
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    btns.forEach(function(b) {
+      b.addEventListener('click', function() { setLang(b.dataset.setLang); });
+    });
+
+    // Initialize from URL or localStorage; default Korean
+    var params = new URLSearchParams(window.location.search);
+    var initial = params.get('lang');
+    if (!initial) {
+      try { initial = localStorage.getItem('preferredLang'); } catch(e) {}
+    }
+    if (!initial) {
+      // detect browser language
+      var nav = (navigator.language || 'ko').toLowerCase();
+      initial = nav.startsWith('ko') ? 'ko' : 'en';
+    }
+    if (initial !== 'en') initial = 'ko';
+    setLang(initial);
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
+</script>
+
+</body>
+</html>

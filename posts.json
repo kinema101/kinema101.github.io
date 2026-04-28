@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "date": "2026-04-15",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/energy/",
+      "title_ko": "암모니아 가스터빈, 해상 추진 시장 진입 임박",
+      "title_en": "Ammonia gas turbines edge closer to marine propulsion market",
+      "comment_ko": "이 자리에 성효님의 코멘트가 들어갑니다. 첫 글이므로 자유롭게 수정하시거나 삭제하시면 됩니다. JDCA 협상 시기와 IMO의 해운 탈탄소 일정에 비추어 보면, 상용 도입 윈도우는 2027~2028년이 현실적입니다.",
+      "comment_en": "This is a placeholder for the commentary. Edit or delete this first entry as you wish. Considering the JDCA negotiation timeline and IMO's shipping decarbonization schedule, the realistic commercial deployment window is 2027–2028."
+    },
+    {
+      "date": "2026-03-28",
+      "source": "MOTIE",
+      "url": "https://www.motie.go.kr/",
+      "title_ko": "산업부, CHPS 2차 입찰 공고",
+      "title_en": "MOTIE announces second CHPS auction round",
+      "comment_ko": "샘플 글입니다. 1차 입찰의 낙찰가와 비교했을 때 가격 시그널이 어느 방향으로 움직이는지가 시장의 다음 1년을 결정한다고 봅니다.",
+      "comment_en": "Sample entry. The pricing signal in this round, compared to the first auction, will likely set the tone for the next twelve months of the market."
+    }
+  ]
+}

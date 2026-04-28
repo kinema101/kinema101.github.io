@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Industry Notes — SH Cho | 업계 노트</title>
+<meta name="description" content="Industry news and commentary by SH Cho. Gas turbines, hydrogen, ammonia, and clean power.">
+<meta name="author" content="SH Cho">
+<link rel="canonical" href="https://sunghyocho.com/notes.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Industry Notes — SH Cho">
+<meta property="og:description" content="Industry news and commentary by SH Cho.">
+<meta property="og:url" content="https://sunghyocho.com/notes.html">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+
+<link rel="alternate" hreflang="ko" href="https://sunghyocho.com/notes.html">
+<link rel="alternate" hreflang="en" href="https://sunghyocho.com/notes.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://sunghyocho.com/notes.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #18181b;
+    --fg-muted: #52525b;
+    --fg-subtle: #71717a;
+    --line: #e4e4e7;
+    --line-soft: #f4f4f5;
+    --accent: #18181b;
+    --max-w: 760px;
+    --gutter: clamp(20px, 5vw, 56px);
+    --font-kr: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    --font-en: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: var(--font-kr);
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.65;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body[data-lang="en"] {
+    font-family: var(--font-en);
+    letter-spacing: -0.011em;
+  }
+  main {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 64px var(--gutter) 120px;
+  }
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .topbar-inner {
+    max-width: 880px; margin: 0 auto;
+    padding: 14px var(--gutter);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand {
+    font-weight: 600; font-size: 14px; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--fg); text-decoration: none;
+  }
+  .topbar-right { display: flex; align-items: center; gap: 24px; }
+  .nav-links { display: flex; gap: 22px; }
+  .nav-links a {
+    font-size: 13px; color: var(--fg-muted); text-decoration: none;
+    letter-spacing: 0.02em; transition: color .15s ease;
+  }
+  .nav-links a:hover { color: var(--fg); }
+  .nav-links a.active { color: var(--fg); }
+  .lang-toggle {
+    display: inline-flex; border: 1px solid var(--line);
+    border-radius: 999px; overflow: hidden; background: #fff;
+  }
+  .lang-toggle button {
+    appearance: none; border: 0; background: transparent; font: inherit;
+    font-size: 12px; letter-spacing: 0.06em; padding: 6px 14px;
+    color: var(--fg-muted); cursor: pointer; transition: background .15s ease, color .15s ease;
+  }
+  .lang-toggle button[aria-pressed="true"] { background: var(--fg); color: #fff; }
+
+  /* Page header */
+  .page-head { padding: 32px 0 56px; border-bottom: 1px solid var(--line-soft); margin-bottom: 24px; }
+  .eyebrow {
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--fg-subtle); margin-bottom: 18px; font-weight: 500;
+  }
+  h1 {
+    font-size: clamp(32px, 4.5vw, 44px);
+    font-weight: 600; line-height: 1.1;
+    letter-spacing: -0.022em; margin-bottom: 14px;
+  }
+  .lede {
+    font-size: 16px; color: var(--fg-muted); max-width: 600px; line-height: 1.55;
+  }
+
+  /* Posts feed */
+  .posts { display: flex; flex-direction: column; }
+  .post {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .post:last-child { border-bottom: 0; }
+  .post-meta {
+    display: flex; gap: 14px; align-items: baseline;
+    font-size: 12px; color: var(--fg-subtle);
+    letter-spacing: 0.04em; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .post-meta .dot { color: var(--line); }
+  .post-meta time { font-variant-numeric: tabular-nums; font-weight: 500; }
+  .post h2 {
+    font-size: clamp(20px, 2.4vw, 24px);
+    font-weight: 600; letter-spacing: -0.018em;
+    line-height: 1.3; margin-bottom: 14px;
+  }
+  .post h2 a {
+    color: var(--fg); text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .15s ease;
+  }
+  .post h2 a:hover { border-bottom-color: var(--fg); }
+  .post h2 a::after {
+    content: "↗"; display: inline-block;
+    margin-left: 8px; font-size: 0.8em;
+    color: var(--fg-subtle); transition: color .15s ease;
+  }
+  .post h2 a:hover::after { color: var(--fg); }
+  .post .comment {
+    font-size: 15px; color: var(--fg-muted);
+    line-height: 1.7;
+  }
+  .post .comment::before {
+    content: ""; display: block;
+    width: 24px; height: 1px;
+    background: var(--fg-subtle);
+    margin-bottom: 12px;
+  }
+
+  .empty, .error {
+    padding: 80px 0; text-align: center;
+    color: var(--fg-subtle); font-size: 15px;
+  }
+  .error { color: #b91c1c; }
+
+  footer {
+    max-width: 880px; margin: 0 auto;
+    padding: 40px var(--gutter); color: var(--fg-subtle);
+    font-size: 12px; letter-spacing: 0.04em;
+    border-top: 1px solid var(--line-soft);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+
+  [data-i18n-en], [data-i18n-ko] { display: none; }
+  body[data-lang="ko"] [data-i18n-ko] { display: block; }
+  body[data-lang="ko"] li[data-i18n-ko] { display: list-item; }
+  body[data-lang="ko"] span[data-i18n-ko],
+  body[data-lang="ko"] a[data-i18n-ko] { display: inline; }
+  body[data-lang="en"] [data-i18n-en] { display: block; }
+  body[data-lang="en"] li[data-i18n-en] { display: list-item; }
+  body[data-lang="en"] span[data-i18n-en],
+  body[data-lang="en"] a[data-i18n-en] { display: inline; }
+
+  @media print {
+    .topbar, footer { display: none; }
+    main { padding: 0 24px; max-width: none; }
+    .post { page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+  }
+</style>
+</head>
+<body data-lang="ko">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand">SH CHO</a>
+    <div class="topbar-right">
+      <nav class="nav-links" aria-label="Primary">
+        <a href="/notes.html" class="active" data-i18n-ko>노트</a>
+        <a href="/notes.html" class="active" data-i18n-en>Notes</a>
+      </nav>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button type="button" data-set-lang="ko" aria-pressed="true">KO</button>
+        <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="page-head">
+    <div class="eyebrow" data-i18n-ko>업계 노트</div>
+    <div class="eyebrow" data-i18n-en>Industry Notes</div>
+
+    <h1 data-i18n-ko>업계 흐름과 짧은 메모</h1>
+    <h1 data-i18n-en>Reading the Industry, Briefly</h1>
+
+    <p class="lede" data-i18n-ko>
+      가스터빈, 산업용 압축기, 친환경 발전 분야의 뉴스 가운데 눈에 띄는 것을 골라 짧게 코멘트합니다.
+    </p>
+    <p class="lede" data-i18n-en>
+      Selected news from gas turbines, industrial compressors, and clean power — with brief commentary.
+    </p>
+  </div>
+
+  <div class="posts" id="posts">
+    <div class="empty" data-i18n-ko>불러오는 중…</div>
+    <div class="empty" data-i18n-en>Loading…</div>
+  </div>
+</main>
+
+<footer>
+  <span>© <span id="year">2026</span> SH Cho.</span>
+  <span><a href="/" style="color:inherit;text-decoration:underline;text-decoration-color:var(--line);" data-i18n-ko>이력으로 돌아가기</a><a href="/" style="color:inherit;text-decoration:underline;text-decoration-color:var(--line);" data-i18n-en>Back to résumé</a></span>
+</footer>
+
+<script>
+  (function() {
+    var body = document.body;
+    var btns = document.querySelectorAll('[data-set-lang]');
+    var html = document.documentElement;
+
+    function setLang(lang) {
+      body.dataset.lang = lang;
+      html.lang = lang;
+      btns.forEach(function(b) {
+        b.setAttribute('aria-pressed', b.dataset.setLang === lang ? 'true' : 'false');
+      });
+      try { localStorage.setItem('preferredLang', lang); } catch(e) {}
+      var url = new URL(window.location.href);
+      if (lang === 'en') url.searchParams.set('lang', 'en');
+      else url.searchParams.delete('lang');
+      window.history.replaceState({}, '', url.toString());
+    }
+
+    btns.forEach(function(b) {
+      b.addEventListener('click', function() { setLang(b.dataset.setLang); });
+    });
+
+    var params = new URLSearchParams(window.location.search);
+    var initial = params.get('lang');
+    if (!initial) { try { initial = localStorage.getItem('preferredLang'); } catch(e) {} }
+    if (!initial) {
+      var nav = (navigator.language || 'ko').toLowerCase();
+      initial = nav.startsWith('ko') ? 'ko' : 'en';
+    }
+    if (initial !== 'en') initial = 'ko';
+    setLang(initial);
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  })();
+
+  // Load posts
+  (function() {
+    var container = document.getElementById('posts');
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, function(c) {
+        return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+      });
+    }
+
+    function fmtDate(s) {
+      // input: YYYY-MM-DD, output for display
+      var d = new Date(s + 'T00:00:00');
+      if (isNaN(d.getTime())) return s;
+      return d.toISOString().slice(0,10);
+    }
+
+    function render(posts) {
+      if (!posts || posts.length === 0) {
+        container.innerHTML = '<div class="empty" data-i18n-ko>아직 글이 없습니다.</div>'
+                            + '<div class="empty" data-i18n-en>No posts yet.</div>';
+        return;
+      }
+      // Sort newest first
+      posts.sort(function(a, b) { return (b.date || '').localeCompare(a.date || ''); });
+
+      var html = posts.map(function(p) {
+        var url = p.url || '#';
+        var src = p.source || '';
+        var date = p.date ? fmtDate(p.date) : '';
+        return ''
+          + '<article class="post">'
+          + '  <div class="post-meta">'
+          + (date ? '<time datetime="' + escapeHtml(p.date) + '">' + escapeHtml(date) + '</time>' : '')
+          + (src ? '<span class="dot">·</span><span>' + escapeHtml(src) + '</span>' : '')
+          + '  </div>'
+          + '  <h2>'
+          + (p.title_ko ? '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener" data-i18n-ko>' + escapeHtml(p.title_ko) + '</a>' : '')
+          + (p.title_en ? '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener" data-i18n-en>' + escapeHtml(p.title_en) + '</a>' : '')
+          + '  </h2>'
+          + (p.comment_ko ? '<p class="comment" data-i18n-ko>' + escapeHtml(p.comment_ko) + '</p>' : '')
+          + (p.comment_en ? '<p class="comment" data-i18n-en>' + escapeHtml(p.comment_en) + '</p>' : '')
+          + '</article>';
+      }).join('');
+      container.innerHTML = html;
+
+      // Reapply language filter to newly rendered items
+      // (CSS handles this automatically via [data-i18n-*])
+    }
+
+    fetch('posts.json', { cache: 'no-store' })
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data) { render((data && data.posts) || []); })
+      .catch(function(err) {
+        container.innerHTML = '<div class="error" data-i18n-ko>글을 불러오지 못했습니다. (posts.json)</div>'
+                            + '<div class="error" data-i18n-en>Could not load posts (posts.json).</div>';
+        console.error(err);
+      });
+  })();
+</script>
+
+</body>
+</html>

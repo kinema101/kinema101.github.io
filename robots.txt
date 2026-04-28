@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sunghyocho.com/sitemap.xml
+Sitemap: https://kinema101.github.io/sitemap.xml

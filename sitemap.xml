@@ -2,21 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sunghyocho.com/</loc>
+    <loc>https://kinema101.github.io/</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://sunghyocho.com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sunghyocho.com/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sunghyocho.com/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://kinema101.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinema101.github.io/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kinema101.github.io/"/>
   </url>
   <url>
-    <loc>https://sunghyocho.com/notes.html</loc>
+    <loc>https://kinema101.github.io/notes.html</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://sunghyocho.com/notes.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://sunghyocho.com/notes.html?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://sunghyocho.com/notes.html"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://kinema101.github.io/notes.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kinema101.github.io/notes.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kinema101.github.io/notes.html"/>
   </url>
 </urlset>
